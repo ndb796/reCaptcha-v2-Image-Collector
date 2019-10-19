@@ -139,6 +139,35 @@ async function run () {
   await page3.setDefaultNavigationTimeout(0)
   page3.goto('https://www.google.com/recaptcha/api2/demo')
   solve(page3)
+
+  /*
+  const browser4 = await puppeteer.launch({
+    headless: false,
+    args: ['--lang=en', '--window-size=360,500', '--proxy-server=socks5://127.0.0.1:9050', '--window-position=0,0']
+  })
+  const page4 = await browser4.newPage()
+  await page4.setDefaultNavigationTimeout(0)
+  page4.goto('https://www.google.com/recaptcha/api2/demo')
+  solve(page4)
+
+  const browser5 = await puppeteer.launch({
+    headless: false,
+    args: ['--lang=en', '--window-size=360,500', '--proxy-server=socks5://127.0.0.1:9050', '--window-position=0,0']
+  })
+  const page5 = await browser5.newPage()
+  await page5.setDefaultNavigationTimeout(0)
+  page5.goto('https://www.google.com/recaptcha/api2/demo')
+  solve(page5)
+
+  const browser6 = await puppeteer.launch({
+    headless: false,
+    args: ['--lang=en', '--window-size=360,500', '--proxy-server=socks5://127.0.0.1:9050', '--window-position=0,0']
+  })
+  const page6 = await browser6.newPage()
+  await page6.setDefaultNavigationTimeout(0)
+  page6.goto('https://www.google.com/recaptcha/api2/demo')
+  solve(page6)
+  */
 }
 
 run()
