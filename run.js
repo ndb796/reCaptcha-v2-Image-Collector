@@ -140,7 +140,6 @@ async function run () {
   page3.goto('https://www.google.com/recaptcha/api2/demo')
   solve(page3)
 
-  /*
   const browser4 = await puppeteer.launch({
     headless: false,
     args: ['--lang=en', '--window-size=360,500', '--proxy-server=socks5://127.0.0.1:9050', '--window-position=0,0']
@@ -150,6 +149,7 @@ async function run () {
   page4.goto('https://www.google.com/recaptcha/api2/demo')
   solve(page4)
 
+  /*
   const browser5 = await puppeteer.launch({
     headless: false,
     args: ['--lang=en', '--window-size=360,500', '--proxy-server=socks5://127.0.0.1:9050', '--window-position=0,0']
